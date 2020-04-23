@@ -10,3 +10,15 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://127.0.0.1:8761/eureka/
+
+wavefront:
+    application:
+        name: ajayj-fortune-teller-app
+        service: ajayj-fortune-teller-service
+
+management:
+    metrics:
+        export:
+            wavefront:
+                api-token: 278a505a-9b53-4f50-bbb7-c7e81e9adc7e
+                uri: https://wavefront.surf
